@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  background: #f7f7f8;
+  line-height: 1.5;
+}
+
+header {
+  background: #cf332b;
+  color: white;
+  padding: 22px 6%;
+  text-align: center;
+}
+
+nav {
+  background: #991212;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px;
+}
+
+nav a {
+  color: rgb(245, 240, 240);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #f94848;
+}
+
+.hero {
+  text-align: center;
+  padding: 42px 20px;
+  background: #e1d0d0d1;
+}
+
+main {
+  max-width: 1050px;
+  padding: 28px 18px;
+  margin: auto;
+}
+
+h2 {
+  color: #991212;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.card,
+.registration,
+.records,
+.help {
+  background: white;
+  border: 1px solid #191616;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 12px #14294a10;
+}
+
+.card h3 {
+  color: #991212;
+  margin-top: 0;
+}
+
+.registration,
+.records,
+.help {
+  margin-top: 28px;
+}
+
+/* Botones (el enlace «Ver clases» usa el mismo estilo) */
+button,
+.button {
+  display: inline-block;
+  background: #991212;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 11px 16px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button:hover,
+.button:hover {
+  background: #cf332b;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: #e8efff;
+  color: #991212;
+}
+
+.secondary:hover {
+  background: #b0b4bd;
+}
+
+.secondary:disabled:hover {
+  background: #e8efff;
+}
+
+.danger {
+  background: #fff0ee;
+  color: #9d2018;
+}
+
+.danger:hover {
+  background: #ffdcd7;
+}
+
+/* Foco visible para quien navega con teclado */
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #cf332b;
+  outline-offset: 2px;
+}
+
+nav a:focus-visible {
+  outline-color: white;
+}
+
+/* Formulario */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.form-topic {
+  margin-top: 14px;
+}
+
+.form-actions {
+  margin-top: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #bac7da;
+  border-radius: 6px;
+  font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #f47e7e;
+  border-color: #991212;
+}
+
+[aria-invalid="true"] {
+  border-color: #b42318;
+}
+
+.field-hint {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.field-error {
+  color: #b42318;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  min-height: 1.1em;
+}
+
+/* Mensajes */
+.notice {
+  padding: 12px;
+  border-radius: 6px;
+  margin: 14px 0;
+}
+
+.success {
+  color: #17633a;
+  background: #e7f7ed;
+}
+
+.error {
+  color: #9d2018;
+  background: #fff0ee;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Registros */
+.record-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid #e1e8f3;
+  padding: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+.record-item p {
+  margin: 4px 0 0;
+}
+
+/* Ayuda */
+details {
+  border-top: 1px solid #e1e8f3;
+  padding: 10px 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #991212;
+}
+
+details p {
+  margin: 8px 0 0;
+}
+
+footer {
+  background: #cf332b;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 18px 12px;
+  }
+
+  main {
+    padding: 20px 12px;
+  }
+}
